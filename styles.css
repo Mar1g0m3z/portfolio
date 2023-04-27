@@ -1,0 +1,50 @@
+/* Add a black background color to the top navigation */
+@font-face {
+  font-family: "chubby_chooregular";
+  src: url("chubbychoo-regular-webfont.woff2") format("woff2"),
+    url("chubbychoo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-size: 100px;
+}
+h2 {
+  font-size: xx-large;
+}
+p {
+  font-size: large;
+}
+
+body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.041), rgba(0, 0, 0, 0.107)),
+    url("./background.png");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: xx-large;
+}
